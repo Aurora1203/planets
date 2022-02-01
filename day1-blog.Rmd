@@ -1,0 +1,74 @@
+---
+title: "day-blog"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# cmd, 检查python 版本
+> python --version  => 没有用， 用
+ #直接显示版本
+> Python 
+- 这里会显示Windows安装的python版本
+
+## cmd, 检查环境路径
+> echo %PATH%
+
+## to know pip verison
+> python -m pip --version
+python -m pip --version
+pip 21.2.4 from C:\Users\Public\lib\site-packages\pip (python 3.10)
+> pip install ###package### 
+
+## 如何拯救得出的error:
+##### - Fatal error in launcher: Unable to create process using '"c:\python37\python.exe"  "C:\Python37\Scripts\pip.exe" install numpy': The system cannot find the file specified.
+
+第一步:
+> where pip
+> where python
+目的是找出pip和Python在系统环境中所在的路径
+
+第二步:
+用资源管理器打开你所发现的路径,找出pip和Python实际所在的路径
+然后,去访问, environment systems variables,
+
+第三步:
+检查你的path,所指向的Python和pip路径是否正确,
+添加以上路径,即可
+>Collecting numpy
+  Downloading numpy-1.22.1-cp310-cp310-win_amd64.whl (14.7 MB)
+     |████████████████████████████████| 14.7 MB 3.3 MB/s
+Installing collected packages: numpy
+Successfully installed numpy-1.22.1
+WARNING: You are using pip version 21.2.4; however, version 22.0.2 is available.
+You should consider upgrading via the 'C:\Users\Public\python.exe -m pip install --upgrade pip' command.
+
+## 更新自己的pip版本, 在cmd端输入
+> python -m pip install --upgrade pip
+
+- Requirement already satisfied: pip in c:\users\public\lib\site-packages (21.2.4)
+Collecting pip
+  Downloading pip-22.0.2-py3-none-any.whl (2.1 MB)
+     |████████████████████████████████| 2.1 MB 2.2 MB/s
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 21.2.4
+    Uninstalling pip-21.2.4:
+      Successfully uninstalled pip-21.2.4
+Successfully installed pip-22.0.2
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
