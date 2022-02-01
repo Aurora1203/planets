@@ -1,0 +1,46 @@
+---
+title: "Course closure on 2022-01-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## ArcGIS or QGIS basics
+### How to calculate the pixel values of multiple raster layers?
+
+1. using the function "spatial analytics -> local -> cell statistics"
+2. search for **r.series** in QGIS, calculate accordingly. But notice that this tool cannot be run in normal QGIS, rather in GRASS.
+  - input raster layers (choose several);
+  - aggregate operation: choose average
+3. using "raster calculator", you cannot use python syntax there.
+
+![QGIS image, same results](C:/Users/Jingxia Wang/Desktop/planets/qgis_r-series_2022-01-27_00-47-07.png)
+
+![ArcMap image, same results](C:/Users/Jingxia Wang/Desktop/planets/arcmap_lst_mean_2022-01-27_00-56-20.png)
+
+### How to use and show the exported results from MSPA?
+- Option 1
+1. display it in QGIS
+2. use the function: raster layer unique values report, save the table
+
+- Option 2
+1. install the "Raster attribute table" plugin. Note _minimum 3.16.0 version_
+2. To obtain the attribute table and explore it in excel.
+
+- Option 3
+1. arcmap, import, 
+```{r iris}
+summary(iris)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
