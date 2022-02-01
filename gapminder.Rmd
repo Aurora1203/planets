@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 2. search for **r.series** in QGIS, calculate accordingly. But notice that this tool cannot be run in normal QGIS, rather in GRASS.
   - input raster layers (choose several);
   - aggregate operation: choose average
-3. using "raster calculator", you cannot use python syntax there.
+3. using "raster calculator", but note that you cannot use python syntax there.
 
 ![QGIS image, same results](C:/Users/Jingxia Wang/Desktop/planets/qgis_r-series_2022-01-27_00-47-07.png)
 
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### How to use and show the exported results from MSPA?
 - Option 1
 1. display it in QGIS
-2. use the function: raster layer unique values report, save the table
+2. use the function: raster layer unique values report, save the attribute table
 
 - Option 2
 1. install the "Raster attribute table" plugin. Note _minimum 3.16.0 version_
