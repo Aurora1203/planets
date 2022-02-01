@@ -1,5 +1,5 @@
 ---
-title: "Course closure on 2022-01-27"
+title: "Course closure on 2022-01-27" for GI planning
 output: html_document
 ---
 
@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 2. search for **r.series** in QGIS, calculate accordingly. But notice that this tool cannot be run in normal QGIS, rather in GRASS.
   - input raster layers (choose several);
   - aggregate operation: choose average
-3. using "raster calculator", you cannot use python syntax there.
+3. using "raster calculator", note that you cannot use python syntax there.
 
 ![QGIS image, same results](C:/Users/Jingxia Wang/Desktop/planets/qgis_r-series_2022-01-27_00-47-07.png)
 
