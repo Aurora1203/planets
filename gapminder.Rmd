@@ -1,6 +1,9 @@
 ---
-title: "Course closure on 2022-01-27 for GI planning" 
-output: html_document
+title: "Course closure on 2022-01-27 for GI planning"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -16,9 +19,16 @@ knitr::opts_chunk$set(echo = TRUE)
   - aggregate operation: choose average
 3. using "raster calculator", note that you cannot use python syntax there.
 
-![QGIS image, same results](C:/Users/Jingxia Wang/Desktop/planets/qgis_r-series_2022-01-27_00-47-07.png)
+##
+``` {R}
+normalizePath(readClipboard(), winslash = "/") 
+```
 
-![ArcMap image, same results](C:/Users/Jingxia Wang/Desktop/planets/arcmap_lst_mean_2022-01-27_00-56-20.png)
+
+
+![QGIS image, same results](C:/Users/Jingxia Wang/Documents/planets/img/qgis_r-series_2022-01-27_00-47-07.png)
+
+![ArcMap image, same results](C:/Users/Jingxia Wang/Documents/planets/img/arcmap_lst_mean_2022-01-27_00-56-20.png)
 
 ### How to use and show the exported results from MSPA?
 - Option 1
